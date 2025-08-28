@@ -1,5 +1,7 @@
 🗺️ HLL Map Detector
+
 Versão 1.0.0
+
 Feito por: Vinícius dos Santos (Clã CAIVERAS)
 
 Um utilitário simples para automatizar a troca de cenas no OBS Studio ao abrir e fechar o mapa do jogo Hell Let Loose.
