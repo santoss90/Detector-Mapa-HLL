@@ -110,6 +110,6 @@ Se este projeto te ajudou, que tal me apoiar com um cafézinho via PIX?
 
 **Chave PIX:** `f9b6943a-5da5-46cb-a3f2-57f8858fdf60`  
 
-<img src="" alt="PIX QR Code" width="200">
+<img src="https://github.com/santoss90/Detector-Mapa-HLL/blob/main/QR_Pix.png" alt="PIX QR Code" width="200">
 
 
