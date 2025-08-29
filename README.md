@@ -100,6 +100,16 @@ Quando o mapa não é detectado → retorna para a cena principal após um curto
 
 Desenvolvido em Python, compilado para Windows (.exe).
 
-Inclui os modelos de IA necessários (YOLO), otimizados para baixa latência.
+Otimizados para baixa latência.
 
 Pensado para streamers que desejam ocultar o mapa sem precisar alternar manualmente no OBS.
+
+## ☕ **Apoie este projeto**
+
+Se este projeto te ajudou, que tal me apoiar com um cafézinho via PIX?  
+
+**Chave PIX:** `f9b6943a-5da5-46cb-a3f2-57f8858fdf60`  
+
+<img src="" alt="PIX QR Code" width="200">
+
+
