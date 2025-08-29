@@ -90,7 +90,7 @@ Captura a tela do Windows.
 
 Localiza a janela do Hell Let Loose.
 
-Analisa a região central usando OpenCV para detectar o mapa.
+Analisa a região central para detectar o mapa.
 
 Quando o mapa é detectado → alterna para a cena do mapa.
 
