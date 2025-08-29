@@ -3,13 +3,13 @@ Versão 1.0.0
 
 Feito por: Vinícius dos Santos (Clã CAIVERAS)
 
-📖 Sobre o Projeto
+## 📖 **Sobre o Projeto**
 
 Um utilitário simples para automatizar a troca de cenas no OBS Studio ao abrir e fechar o mapa do jogo Hell Let Loose.
 
 Este programa foi desenvolvido para streamers e criadores de conteúdo que desejam ocultar o mapa do jogo em transmissões. Ele detecta automaticamente quando o jogador abre o mapa e alterna a cena no OBS, retornando para a cena principal quando o mapa é fechado.
 
-🛠️ Requisitos
+## 🛠️ **Requisitos**
 
 Para usar este programa, você precisa ter:
 
@@ -21,13 +21,13 @@ O jogo Hell Let Loose rodando em modo janela ou tela cheia sem bordas.
 
 Windows (o programa foi compilado para rodar em .exe).
 
-💾 Download
+## 💾 **Download**
 
 Baixe a versão mais recente do programa aqui:
 
 [👉 Download do HLL Map Detector (.exe)](https://drive.google.com/file/d/1WBzVWxwdqfG_M9dqfi5zF8LjwPUR065O/view?usp=sharing)
 
-🚀 Como Usar
+## 🚀 **Como Usar**
 1. Configuração do OBS
 
 No OBS Studio, crie duas cenas:
@@ -82,7 +82,7 @@ Um console (CMD) será aberto mostrando os logs do programa.
 
 Para encerrar, basta fechar o console.
 
-⚙️ Como Funciona
+## ⚙️ Como Funciona
 
 O programa:
 
@@ -96,7 +96,7 @@ Quando o mapa é detectado → alterna para a cena do mapa.
 
 Quando o mapa não é detectado → retorna para a cena principal após um curto período.
 
-📝 Observações
+## 📝 **Observações**
 
 Desenvolvido em Python, compilado para Windows (.exe).
 
