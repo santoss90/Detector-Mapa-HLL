@@ -28,7 +28,7 @@ Baixe a versão mais recente do programa aqui:
 [👉 Download do HLL Map Detector (.exe)](https://drive.google.com/file/d/1WBzVWxwdqfG_M9dqfi5zF8LjwPUR065O/view?usp=sharing)
 
 ## 🚀 **Como Usar**
-1. Configuração do OBS
+1. **Configuração do OBS**
 
 No OBS Studio, crie duas cenas:
 
@@ -38,7 +38,7 @@ Cena secundária para quando o mapa estiver aberto (ex: "Map").
 
 A cena secundária pode ser uma tela preta, uma imagem ou qualquer outro conteúdo desejado.
 
-2. Configuração do settings.json
+2. **Configuração do settings.json**
 
 Na mesma pasta do executável (.exe), crie um arquivo chamado settings.json com o seguinte conteúdo:
 
@@ -62,7 +62,7 @@ map_scene_name → Nome exato da cena secundária que será exibida quando o map
 
 ⚠️ Atenção: os nomes das cenas devem ser exatamente iguais aos usados no OBS (incluindo maiúsculas e espaços).
 
-3. Primeira Execução ⚡
+3. **Primeira Execução** ⚡
 
 Na primeira vez que o programa for aberto, ele pode demorar um pouco para preparar as configurações iniciais.
 Durante esse processo, será exibida a mensagem:
@@ -74,7 +74,7 @@ creating new ultralytics settings...
 Se esse carregamento demorar muito, basta fechar e abrir o programa novamente.
 Nas próximas execuções, ele iniciará normalmente sem essa espera. ✅
 
-4. Executando o Programa
+4. **Executando o Programa**
 
 Dê duplo clique no arquivo hll_detector.exe.
 
