@@ -25,7 +25,7 @@ Windows (o programa foi compilado para rodar em .exe).
 
 Baixe a versão mais recente do programa aqui:
 
-[👉 Download do Detector de Mapa HLL (.exe)](https://drive.google.com/file/d/1WBzVWxwdqfG_M9dqfi5zF8LjwPUR065O/view?usp=sharing)
+[👉 Download do Detector de Mapa HLL (.exe)](https://drive.google.com/file/d/1-wc13zH6tKVIQbeR92r5vhyL8McHqc7k/view?usp=sharing)
 
 ## 🚀 **Como Usar**
 1. **Configuração do OBS**
