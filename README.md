@@ -49,7 +49,8 @@ Na mesma pasta do executável (.exe), crie um arquivo chamado settings.json com 
     "obs_port": 4455,
     "obs_password": "",
     "game_scene_name": "Game",
-    "map_scene_name": "Map"
+    "map_scene_name": "Map",
+    "detection_time_config": 0.20
 }
 
 ```
@@ -59,6 +60,8 @@ obs_password → Senha configurada no OBS WebSocket (se houver).
 game_scene_name → Nome exato da cena principal no OBS.
 
 map_scene_name → Nome exato da cena secundária que será exibida quando o mapa estiver aberto.
+
+detection_time_config → Tempo em segundos para detectar o mapa aberto.
 
 ⚠️ Atenção: os nomes das cenas devem ser exatamente iguais aos usados no OBS (incluindo maiúsculas e espaços).
 
