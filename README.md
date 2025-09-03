@@ -1,117 +1,105 @@
-🗺️ HLL Map Detector
-Versão 1.0.0
+# 🗺️ HLL Map Detector
+### Versão 2.0.0
 
-Feito por: Vinícius dos Santos (Clã CAIVERAS)
+Feito por: **Vinícius dos Santos**
 
-## 📖 **Sobre o Projeto**
+---
 
-Um utilitário simples para automatizar a troca de cenas no OBS Studio ao abrir e fechar o mapa do jogo Hell Let Loose.
+## 📖 Sobre o Projeto
 
-Este programa foi desenvolvido para streamers e criadores de conteúdo que desejam ocultar o mapa do jogo em transmissões. Ele detecta automaticamente quando o jogador abre o mapa e alterna a cena no OBS, retornando para a cena principal quando o mapa é fechado.
+Um utilitário simples e leve para automatizar a troca de cenas no **OBS Studio** ao abrir e fechar o mapa do jogo **Hell Let Loose**.
 
-## 🛠️ **Requisitos**
+Este programa foi desenvolvido para streamers e criadores de conteúdo que desejam ocultar o mapa do jogo em suas transmissões. Ele detecta automaticamente quando o jogador abre o mapa e alterna a cena no OBS, retornando para a cena principal quando o mapa é fechado.
+
+## 🛠️ Requisitos
 
 Para usar este programa, você precisa ter:
 
-OBS Studio (v28.0 ou superior) com o OBS-WebSocket ativado.
+* **OBS Studio** (v28.0 ou superior) com o **OBS-WebSocket** ativado.
+    * Habilite em **Configurações > WebSocket** no OBS.
+* O jogo **Hell Let Loose** rodando em modo **janela** ou **tela cheia sem bordas**.
+* **Windows** (o programa foi compilado para rodar em .exe).
 
-Habilite em Configurações > WebSocket no OBS.
+## 💾 Download
 
-O jogo Hell Let Loose rodando em modo janela ou tela cheia sem bordas.
+Baixe a versão mais recente do programa aqui. O arquivo é um executável portátil e não requer instalação.
 
-Windows (o programa foi compilado para rodar em .exe).
+👉 **[Baixar Detector de Mapa HLL (.exe)](https://drive.google.com/sua-url-aqui)**
 
-## 💾 **Download**
+* **Atenção:** Por ser um arquivo executável, seu navegador ou antivírus pode emitir um aviso. Você pode prosseguir com o download e execução com segurança.
 
-Baixe a versão mais recente do programa aqui:
+## 🚀 Como Usar
 
-[👉 Download do Detector de Mapa HLL (.exe)](https://drive.google.com/file/d/1-wc13zH6tKVIQbeR92r5vhyL8McHqc7k/view?usp=sharing)
-
-## 🚀 **Como Usar**
-1. **Configuração do OBS**
+### 1. Configuração do OBS
 
 No OBS Studio, crie duas cenas:
 
-Cena principal para o jogo (ex: "Game").
-
-Cena secundária para quando o mapa estiver aberto (ex: "Map").
+**1.  Cena principal para o jogo** (ex: "Cena Jogando")**
+**2.  Cena secundária** para quando o mapa estiver aberto (ex: "Cena Remove Mapa")**
 
 A cena secundária pode ser uma tela preta, uma imagem ou qualquer outro conteúdo desejado.
 
-2. **Configuração do settings.json**
+**2. Configuração do `settings.json`**
 
-Na mesma pasta do executável (.exe), crie um arquivo chamado settings.json com o seguinte conteúdo:
+Na mesma pasta onde você baixou o executável (`.exe`), crie um arquivo chamado **`settings.json`** com o seguinte conteúdo:
 
-``` json
-
+```json
 {
     "obs_host": "localhost",
     "obs_port": 4455,
     "obs_password": "",
-    "game_scene_name": "Game",
-    "map_scene_name": "Map",
-    "detection_time_config": 0.20
+    "game_scene_name": "Cena Jogando",
+    "map_scene_name": "Cena Remove Mapa",
+    "detection_threshold": 3,
+    "sleep_time": 0.10
 }
-
 ```
 
-obs_password → Senha configurada no OBS WebSocket (se houver).
+obs_host: O endereço do seu OBS WebSocket. Geralmente é localhost.
 
-game_scene_name → Nome exato da cena principal no OBS.
+obs_port: A porta do seu OBS WebSocket. O padrão é 4455.
 
-map_scene_name → Nome exato da cena secundária que será exibida quando o mapa estiver aberto.
+obs_password: A senha que você configurou no OBS WebSocket. Se não houver, deixe "".
 
-detection_time_config → Tempo em segundos para detectar o mapa aberto.
+game_scene_name: Nome exato da cena principal no OBS.
 
-⚠️ Atenção: os nomes das cenas devem ser exatamente iguais aos usados no OBS (incluindo maiúsculas e espaços).
+map_scene_name: Nome exato da cena que será exibida quando o mapa estiver aberto.
 
-3. **Primeira Execução** ⚡
+detection_threshold: O número de frames que o programa precisa detectar o mapa para confirmar que ele está aberto. Padrão: 3.
 
-Na primeira vez que o programa for aberto, ele pode demorar um pouco para preparar as configurações iniciais.
-Durante esse processo, será exibida a mensagem:
+sleep_time: O intervalo de tempo (em segundos) entre cada verificação de tela. Padrão: 0.10.
 
-``` cmd
-creating new ultralytics settings...
-```
+⚠️ Atenção: Os nomes das cenas (game_scene_name e map_scene_name) devem ser exatamente iguais aos que você usou no OBS, incluindo maiúsculas e espaços.
 
-Se esse carregamento demorar muito, basta fechar e abrir o programa novamente.
-Nas próximas execuções, ele iniciará normalmente sem essa espera. ✅
+**3. Executando o Programa**
+Dê um duplo clique no arquivo HLL_Map_Detector.exe.
 
-4. **Executando o Programa**
+Uma janela do programa será aberta, mostrando os logs de atividade.
 
-Dê duplo clique no arquivo hll_detector.exe.
-
-Um console (CMD) será aberto mostrando os logs do programa.
-
-Para encerrar, basta fechar o console.
+Para encerrar o programa, basta fechar a janela principal ou o console.
 
 ## ⚙️ Como Funciona
+O programa utiliza a biblioteca de visão computacional para identificar a imagem do mapa do Hell Let Loose na sua tela.
 
-O programa:
+Ele captura a tela da sua janela do jogo.
 
-Captura a tela do Windows.
+Analisa a região central para verificar se o mapa está visível.
 
-Localiza a janela do Hell Let Loose.
+Quando o mapa é detectado por um número de frames consecutivos (definido em detection_threshold) → a cena do OBS é alternada para a cena do mapa.
 
-Analisa a região central para detectar o mapa.
+Quando o mapa desaparece → o programa retorna para a cena principal após um curto período, garantindo que a transição ocorra de forma suave e com baixa latência.
 
-Quando o mapa é detectado → alterna para a cena do mapa.
+## 📝 Observações
+Desenvolvido em Python e compilado para Windows (.exe).
 
-Quando o mapa não é detectado → retorna para a cena principal após um curto período.
+Otimizado para baixa latência.
 
-## 📝 **Observações**
+Perfeito para streamers que desejam uma solução automática e confiável.
 
-Desenvolvido em Python, compilado para Windows (.exe).
+## ☕ Apoie este projeto
+Se este projeto te ajudou a melhorar suas transmissões, que tal me apoiar com um cafézinho via PIX?
 
-Otimizados para baixa latência.
-
-Pensado para streamers que desejam ocultar o mapa sem precisar alternar manualmente no OBS.
-
-## ☕ **Apoie este projeto**
-
-Se este projeto te ajudou, que tal me apoiar com um cafézinho via PIX?  
-
-**Chave PIX:** `f9b6943a-5da5-46cb-a3f2-57f8858fdf60`  
+Chave PIX: f9b6943a-5da5-46cb-a3f2-57f8858fdf60
 
 <img src="https://github.com/santoss90/Detector-Mapa-HLL/blob/main/QR_Pix.png" alt="PIX QR Code" width="200">
 
