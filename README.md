@@ -40,7 +40,7 @@ No OBS Studio, crie duas cenas:
 
 A cena secundária pode ser uma tela preta, uma imagem ou qualquer outro conteúdo desejado.
 
-**2. Configuração do `settings.json`**
+**3. Configuração do `settings.json`**
 
 Na mesma pasta onde você baixou o executável (`.exe`), crie um arquivo chamado **`settings.json`** com o seguinte conteúdo:
 
@@ -72,7 +72,7 @@ sleep_time: O intervalo de tempo (em segundos) entre cada verificação de tela.
 
 ⚠️ Atenção: Os nomes das cenas (game_scene_name e map_scene_name) devem ser exatamente iguais aos que você usou no OBS, incluindo maiúsculas e espaços.
 
-**3. Executando o Programa**
+**4. Executando o Programa**
 
 Dê um duplo clique no arquivo HLL_Map_Detector.exe.
 
