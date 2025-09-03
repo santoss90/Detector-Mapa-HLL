@@ -30,11 +30,12 @@ Baixe a versão mais recente do programa aqui. O arquivo é um executável port�
 
 ## 🚀 Como Usar
 
-### 1. Configuração do OBS
+### Configuração do OBS
 
 No OBS Studio, crie duas cenas:
 
 **1.  Cena principal para o jogo** (ex: "Cena Jogando")**
+
 **2.  Cena secundária** para quando o mapa estiver aberto (ex: "Cena Remove Mapa")**
 
 A cena secundária pode ser uma tela preta, uma imagem ou qualquer outro conteúdo desejado.
