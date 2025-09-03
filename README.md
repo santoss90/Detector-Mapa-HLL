@@ -30,6 +30,7 @@ Para baixar, acesse o link abaixo:
   **👉 Baixar a Versão Mais Recente**
 </a>
 
+
 * **Atenção:** Por ser um arquivo executável, seu navegador ou antivírus pode emitir um aviso. Você pode prosseguir com o download e execução com segurança.
 
 ## 🚀 Como Usar
