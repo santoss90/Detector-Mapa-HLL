@@ -22,9 +22,13 @@ Para usar este programa, você precisa ter:
 
 ## 💾 Download
 
-Baixe a versão mais recente do programa aqui. O arquivo é um executável portátil e não requer instalação.
+A versão mais recente do programa, juntamente com todas as notas de lançamento e versões anteriores, está disponível na página de Releases do projeto.
 
-👉 **<a href="https://drive.google.com/file/d/1DKoC8FJuW0fuVJKZJOcextYsVnwsIqx9/view?usp=sharing" target="_blank">Download do Detector de Mapa HLL (.exe)</a>**
+Para baixar, acesse o link abaixo:
+
+<a href="https://github.com/santoss90/Detector-Mapa-HLL/releases/latest" target="_blank">
+  **👉 Baixar a Versão Mais Recente**
+</a>
 
 * **Atenção:** Por ser um arquivo executável, seu navegador ou antivírus pode emitir um aviso. Você pode prosseguir com o download e execução com segurança.
 
