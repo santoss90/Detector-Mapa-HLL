@@ -72,6 +72,7 @@ sleep_time: O intervalo de tempo (em segundos) entre cada verificação de tela.
 ⚠️ Atenção: Os nomes das cenas (game_scene_name e map_scene_name) devem ser exatamente iguais aos que você usou no OBS, incluindo maiúsculas e espaços.
 
 **3. Executando o Programa**
+
 Dê um duplo clique no arquivo HLL_Map_Detector.exe.
 
 Uma janela do programa será aberta, mostrando os logs de atividade.
