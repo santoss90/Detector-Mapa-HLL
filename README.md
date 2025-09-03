@@ -24,7 +24,7 @@ Para usar este programa, você precisa ter:
 
 Baixe a versão mais recente do programa aqui. O arquivo é um executável portátil e não requer instalação.
 
-👉 **[Baixar Detector de Mapa HLL (.exe)](https://drive.google.com/sua-url-aqui)**
+👉 **[Baixar Detector de Mapa HLL (.exe)]([https://drive.google.com/sua-url-aqui](https://drive.google.com/file/d/1h37hChcCuOv4wTvJX63FqVrogZceieVX/view?usp=sharing))**
 
 * **Atenção:** Por ser um arquivo executável, seu navegador ou antivírus pode emitir um aviso. Você pode prosseguir com o download e execução com segurança.
 
